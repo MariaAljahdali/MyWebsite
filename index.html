@@ -16,7 +16,7 @@
             margin-top: 100px;
             /* يعطي مساحة مساوية لارتفاع شريط التنقل */
             font-family: "portada-arabic-text-variable", sans-serif;
-            font-variation-settings: 'wght' 400;
+            font-variation-settings: 'wight' 400;
         }
 
         .cont {
@@ -366,6 +366,38 @@
             fill: #fffdef;
         }
 
+        /* الهواتف الصغيرة جدًا */
+        @media screen and (max-width: 320px) {
+            button {
+                padding: 5px 10px !important;
+                font-size: 10px !important;
+            }
+        }
+
+        /* الهواتف الذكية القياسية */
+        @media screen and (max-width: 375px) {
+            button {
+                padding: 8px 12px !important;
+                font-size: 10px !important;
+            }
+        }
+
+        /* الهواتف الكبيرة */
+        @media screen and (max-width: 425px) {
+            button {
+                padding: 10px 15px !important;
+                font-size: 10px !important;
+            }
+        }
+
+        /* الأجهزة اللوحية */
+        @media screen and (max-width: 768px) {
+            button {
+                padding: 12px 20px !important;
+                font-size: 15px !important;
+            }
+        }
+
         .loader {
             --col1: rgb(60.63, 41.92, 113.04);
             /* اللون الأول */
@@ -413,27 +445,26 @@
             }
 
             .words {
-                font-size: 40px;
+                font-size: 35px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
             }
 
             h2 {
-                font-size: 25px;
+                font-size: 30px !important;
             }
 
             .cont p {
-                font-size: 17px;
+                font-size: 14px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
                 margin-top: 30px;
             }
 
         }
 
-
         .Works {
-            padding: 30px;
+            padding: 15px;
+            /* تقليل الحشو */
         }
-
 
         fieldset {
             border: 0;
@@ -441,19 +472,20 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(to right, rgb(60.63, 41.92, 113.04), rgb(115.35, 79.74, 215.04));
-            padding: 15px;
-            border-radius: 50px;
-            max-width: 600px;
-            /* عرض ثابت للشاشات الكبيرة */
+            padding: 10px;
+            /* تقليل الحشو داخل الحقل */
+            border-radius: 30px;
+            /* تصغير زوايا الحقل */
+            max-width: 400px;
+            /* تقليل العرض */
             margin: auto;
             box-sizing: border-box;
         }
 
         .button-group {
-            margin: 0 5px;
-            /* تباعد بين الأزرار */
+            margin: 0 3px;
+            /* تقليل التباعد بين الأزرار */
         }
-
 
         .button-group input[type="radio"] {
             display: none;
@@ -462,54 +494,64 @@
 
         .button-group label {
             display: inline-block;
-            padding: 20px 60px;
-            /* حجم كبير للشاشات الكبيرة */
+            padding: 20px 45px;
+            /* تقليل حجم الأزرار */
             cursor: pointer;
             border: 1px solid #4B3F6E;
             background-color: #FFFFFF;
             color: #4B3F6E;
-            border-radius: 50px;
+            border-radius: 30px;
+            /* تصغير زوايا الأزرار */
             transition: all ease 0.2s;
             text-align: center;
-            font-size: 25px;
-            /* حجم خط كبير */
-            margin: 5px;
+            font-size: 16px;
+            /* تصغير حجم الخط */
+            margin: 3px;
             box-sizing: border-box;
         }
 
         .button-group input[type="radio"]:checked+label {
             background-color: rgb(244, 240, 255);
             color: #3D2A71;
-            border: 3px solid rgb(244, 240, 255);
-            box-shadow: 0px 0px 50px -15px #000000;
+            border: 2px solid rgb(244, 240, 255);
+            box-shadow: 0px 0px 20px -10px #000000;
+            /* تصغير الظل */
             font-weight: bold;
         }
-
 
         /* إعدادات للأجهزة الصغيرة */
         @media screen and (max-width: 768px) {
             .Works {
-                padding: 15px;
-                /* الحفاظ على الحشو كما هو */
+                padding: 40px;
+                /* تقليل الحشو */
             }
 
             fieldset {
-                padding: 5px;
+                padding: 8px;
+                /* تقليل الحشو داخل الحقل */
                 max-width: 90%;
-                /* تعديل الحجم ليشغل كامل العرض */
+                /* تكيف العرض مع الشاشة */
+                border-radius: 20px;
             }
 
             .button-group {
                 margin: 1px;
+                /* تقليل التباعد بين الأزرار */
                 justify-content: center;
-                /* الحفاظ على الأزرار في صف واحد */
             }
 
             .button-group label {
-                padding: 10px 20px;
+                padding: 8px 15px;
                 /* تقليل حجم الأزرار */
-                font-size: 20px;
-                /* تصغير حجم الخط */
+                font-size: 14px;
+                /* تقليل حجم الخط */
+            }
+
+            .cardWork__title{
+                font-size: 20px !important;
+            }
+            .cardWork__description{
+                font-size: 13px !important;
             }
         }
 
@@ -517,7 +559,7 @@
         /* المسافة بين الزر والقائمة */
         @media (max-width: 1024px) {
             nav {
-                gap: 20px;
+                gap: 25px;
                 /* إضافة مسافة بين الزر والقائمة */
                 flex-direction: row;
                 /* جعل الزر والقائمة بجانب بعضهما */
@@ -569,7 +611,7 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 40px;
+                font-size: 35px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
             }
         }
@@ -710,12 +752,17 @@
                 flex: 1 1 calc(50% - 20px);
                 /* Two cards per row */
             }
+
+            .cardWork__description {
+                font-size: 10px;
+            }
         }
 
         @media (max-width: 480px) {
             .cardWork {
                 flex: 1 1 100%;
                 /* One card per row */
+                font-size: 10px;
             }
         }
 
@@ -930,7 +977,8 @@
 <header>
     <nav>
         <div class="logo">
-            <img src="image/Logo.png" alt="Logo">
+
+            <a href="#top"><img src="image/Logo.png" alt="Logo"></a>
         </div>
         <ul class="nav-list">
             <li><a href="#Services"><strong>Services</strong></a></li>
@@ -939,8 +987,8 @@
         </ul>
 
 
-        <button onclick="location.href='#content';">
-            Here Me!
+        <button onclick="location.href='#card-social';">
+            Hire Me!
             <div class="star-1">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
                     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1151,7 +1199,7 @@
                             help residential users optimize electricity usage. The app features real-time data
                             visualization, personalized advice, and interactive graphs for energy monitoring. It was
                             designed using user-centered prototyping techniques to ensure smooth navigation and ease of
-                            use.<br>
+                            use.
                             "Wait for the day when WAT becomes a reality."
                         </p>
                         <a href="https://x.com/BMaraMB/status/1854887314364707196" class="cardWork__button"
@@ -1300,7 +1348,7 @@
 
     </div>
     <footer class="footer">
-        <div class="card-social">
+        <div class="card-social" id="card-social">
             <!-- محتوى الأيقونات الاجتماعية -->
             <a class="socialContainer containerTwo" href="https://www.linkedin.com/in/maria-aljahdali">
 
@@ -1399,4 +1447,5 @@
 
     </script>
 </body>
+
 </html>
