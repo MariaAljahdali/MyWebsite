@@ -46,6 +46,8 @@
             transition: all 0.3s ease;
         }
 
+        
+
         header {
             background-color: rgb(244, 240, 255);
             color: white;
@@ -179,27 +181,23 @@
 
         /* Media query for mobile */
         @media (max-width: 768px) {
-            .nav-list {
-                display: none;
-                position: absolute;
-                top: 120px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 94%;
-                background-color: #F0E5FF;
-                border-radius: 30px;
-                padding: 20px 0;
-                z-index: 1000;
-                box-sizing: border-box;
-                transition: transform 0.3s ease, opacity 0.3s ease;
-            }
+    .nav-list {
+        display: none; /* Hide the navigation list */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        background-color: #F0E5FF; /* Background color for visibility */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px 0; /* Padding for spacing */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
 
-            .nav-list.active {
-                display: flex;
-                flex-direction: column;
-                opacity: 1;
-                transform: translateX(-50%);
-            }
+    .nav-list.active {
+        display: flex; /* Show the navigation list when active */
+    }
+
 
             .nav-list li {
                 margin: 10px 0;
@@ -251,7 +249,6 @@
             }
 
             @media (max-width: 375px) {
-            
             .nav-list {
                 display: none;
                 position: absolute;
@@ -507,32 +504,32 @@
         /* الهواتف الصغيرة جدًا */
         @media screen and (max-width: 320px) {
             button {
-                padding: 5px 10px !important;
-                font-size: 7px !important;
+                padding: 4px 8px !important;
+                font-size: 4px !important;
             }
         }
 
         /* الهواتف الذكية القياسية */
         @media screen and (max-width: 375px) {
             button {
-                padding: 8px 12px !important;
-                font-size: 7px !important;
+                padding: 5px 10px !important;
+                font-size: 5px !important;
             }
         }
 
         /* الهواتف الكبيرة */
         @media screen and (max-width: 425px) {
             button {
-                padding: 10px 15px !important;
-                font-size: 7px !important;
+                padding: 6px 12px !important;
+                font-size: 6px !important;
             }
         }
 
         /* الأجهزة اللوحية */
         @media screen and (max-width: 768px) {
             button {
-                padding: 12px 20px !important;
-                font-size: 15px !important;
+                padding: 10px 20px !important;
+                font-size: 10px !important;
             }
         }
 
@@ -592,9 +589,9 @@
             }
 
             .cont p {
-                font-size: 14px;
+                font-size: 16px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
-                margin-top: 30px;
+                margin-top: 10px;
             }
 
         }
@@ -618,36 +615,32 @@
             }
 
             .cont p {
-                font-size: 12px;
+                font-size: 14px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
-                margin-top: 50px;
+                margin-top: 40px;
                 align-items: center;
             }
         }
 
-        @media (max-width: 425px) {
+        @media (max-width: 375px) {
             .loader {
                 font-size: 20px;
                 /* تقليل حجم الخط في الجوال */
-                align-items: center;
             }
 
             .words {
                 font-size: 30px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
-                align-items: center;
             }
 
             h2 {
                 font-size: 20px !important;
-                align-items: center;
             }
 
             .cont p {
-                font-size: 10px;
+                font-size: 12px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
-                margin-top: 70px;
-                align-items: center;
+                margin-top: 30px;
             }
         }
 
@@ -970,30 +963,6 @@
             /* تغيير لون النص عند التمرير */
         }
 
-        @media (max-width: 768px) {
-            .cardSkill-image {
-                width: 150px;
-            /* العرض مربع صغير */
-            height: 150px;
-        }
-    }
-
-    
-    @media (max-width: 425px) {
-            .cardSkill-image {
-                width: 140px;
-            /* العرض مربع صغير */
-            height: 140px;
-        }
-    }
-
-    @media (max-width: 375px) {
-            .cardSkill-image {
-                width: 130px;
-            /* العرض مربع صغير */
-            height: 130px;
-        }
-    }
     
         /* Flex container for the cards */
         .card-container {
@@ -1068,7 +1037,7 @@
             .cardWork {
                 flex: 1 1 100%;
                 /* One card per row */
-                font-size: 7px;
+                font-size: 8px;
             }
         }
 
@@ -1088,7 +1057,7 @@
             .cardWork {
                 flex: 1 1 100%;
                 /* One card per row */
-                font-size: 6px;
+                font-size: 8px;
             }
         }
 
@@ -1141,7 +1110,7 @@
         }
 
         .cardWork__button {
-            padding: 15px;
+            padding: 8px;
             border-radius: 8px;
             background: transparent;
             color: #ffffff;
@@ -1574,7 +1543,6 @@
             </div>
         </section>
 
-
         <section id="web-section" class="section">
 
             <div class="card-container">
@@ -1802,5 +1770,4 @@
 
     </script>
 </body>
-
 </html>
