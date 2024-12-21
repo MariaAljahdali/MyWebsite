@@ -31,7 +31,6 @@
             /* إضافة padding لتحسين المظهر */
         }
 
-
         .cont h2 {
             color: #3D2A71;
             font-size: 40px;
@@ -214,6 +213,145 @@
                 margin-left: auto;
             }
         }
+        
+        @media (max-width: 425px) {
+            .nav-list {
+                display: none;
+                position: absolute;
+                top: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 94%;
+                background-color: #F0E5FF;
+                border-radius: 30px;
+                padding: 20px 0;
+                z-index: 1000;
+                box-sizing: border-box;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+
+            .nav-list.active {
+                display: flex;
+                flex-direction: column;
+                opacity: 1;
+                transform: translateX(-50%);
+            }
+
+            .nav-list li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-left: auto;
+            }
+            }
+
+            @media (max-width: 375px) {
+            
+            .nav-list {
+                display: none;
+                position: absolute;
+                top: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 94%;
+                background-color: #F0E5FF;
+                border-radius: 30px;
+                padding: 20px 0;
+                z-index: 1000;
+                box-sizing: border-box;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+
+            .nav-list.active {
+                display: flex;
+                flex-direction: column;
+                opacity: 1;
+                transform: translateX(-50%);
+            }
+
+            .nav-list li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-left: auto;
+            }
+            }
+            
+        /* المسافة بين الزر والقائمة */
+        @media (max-width: 768px) {
+            nav {
+                gap: 25px;
+                /* إضافة مسافة بين الزر والقائمة */
+                flex-direction: row;
+                /* جعل الزر والقائمة بجانب بعضهما */
+            }
+
+            .nav-list {
+                gap: 15px;
+                /* مسافة بين عناصر القائمة */
+            }
+
+            .menu-toggle {
+                display: flex;
+                /* إظهار زر القائمة في الجوال */
+                margin-left: auto;
+                /* دفعه إلى أقصى اليمين */
+            }
+        }
+        
+        /* المسافة بين الزر والقائمة */
+        @media (max-width: 425px) {
+            nav {
+                gap: 20px;
+                /* إضافة مسافة بين الزر والقائمة */
+                flex-direction: row;
+                /* جعل الزر والقائمة بجانب بعضهما */
+            }
+
+            .nav-list {
+                gap: 15px;
+                /* مسافة بين عناصر القائمة */
+            }
+
+            .menu-toggle {
+                display: flex;
+                /* إظهار زر القائمة في الجوال */
+                margin-left: auto;
+                /* دفعه إلى أقصى اليمين */
+            }
+        }
+        
+        /* المسافة بين الزر والقائمة */
+        @media (max-width: 375px) {
+            nav {
+                gap: 20px;
+                /* إضافة مسافة بين الزر والقائمة */
+                flex-direction: row;
+                /* جعل الزر والقائمة بجانب بعضهما */
+            }
+
+            .nav-list {
+                gap: 15px;
+                /* مسافة بين عناصر القائمة */
+            }
+
+            .menu-toggle {
+                display: flex;
+                /* إظهار زر القائمة في الجوال */
+                margin-left: auto;
+                /* دفعه إلى أقصى اليمين */
+            }
+        }
 
         button {
             position: relative;
@@ -370,7 +508,7 @@
         @media screen and (max-width: 320px) {
             button {
                 padding: 5px 10px !important;
-                font-size: 10px !important;
+                font-size: 7px !important;
             }
         }
 
@@ -378,7 +516,7 @@
         @media screen and (max-width: 375px) {
             button {
                 padding: 8px 12px !important;
-                font-size: 10px !important;
+                font-size: 7px !important;
             }
         }
 
@@ -386,7 +524,7 @@
         @media screen and (max-width: 425px) {
             button {
                 padding: 10px 15px !important;
-                font-size: 10px !important;
+                font-size: 7px !important;
             }
         }
 
@@ -459,6 +597,58 @@
                 margin-top: 30px;
             }
 
+        }
+
+        @media (max-width: 425px) {
+            .loader {
+                font-size: 20px;
+                /* تقليل حجم الخط في الجوال */
+                align-items: center;
+            }
+
+            .words {
+                font-size: 35px;
+                /* تقليل حجم الخط الخاص بالنص المتغير */
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 25px !important;
+                align-items: center;
+            }
+
+            .cont p {
+                font-size: 12px;
+                /* تقليل حجم الخط للنص داخل العنصر <p> */
+                margin-top: 50px;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .loader {
+                font-size: 20px;
+                /* تقليل حجم الخط في الجوال */
+                align-items: center;
+            }
+
+            .words {
+                font-size: 30px;
+                /* تقليل حجم الخط الخاص بالنص المتغير */
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 20px !important;
+                align-items: center;
+            }
+
+            .cont p {
+                font-size: 10px;
+                /* تقليل حجم الخط للنص داخل العنصر <p> */
+                margin-top: 70px;
+                align-items: center;
+            }
         }
 
         .Works {
@@ -547,14 +737,86 @@
                 /* تقليل حجم الخط */
             }
 
-            .cardWork__title{
+            .cardWork__title {
                 font-size: 20px !important;
             }
-            .cardWork__description{
+
+            .cardWork__description {
                 font-size: 13px !important;
             }
         }
 
+        @media screen and (max-width: 425px) {
+            .Works {
+                padding: 40px;
+                /* تقليل الحشو */
+            }
+
+            fieldset {
+                padding: 8px;
+                /* تقليل الحشو داخل الحقل */
+                max-width: 90%;
+                /* تكيف العرض مع الشاشة */
+                border-radius: 20px;
+            }
+
+            .button-group {
+                margin: 1px;
+                /* تقليل التباعد بين الأزرار */
+                justify-content: center;
+            }
+
+            .button-group label {
+                padding: 8px 15px;
+                /* تقليل حجم الأزرار */
+                font-size: 14px;
+                /* تقليل حجم الخط */
+            }
+
+            .cardWork__title {
+                font-size: 17px !important;
+            }
+
+            .cardWork__description {
+                font-size: 10px !important;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .Works {
+                padding: 40px;
+                /* تقليل الحشو */
+            }
+
+            fieldset {
+                padding: 8px;
+                /* تقليل الحشو داخل الحقل */
+                max-width: 90%;
+                /* تكيف العرض مع الشاشة */
+                border-radius: 20px;
+            }
+
+            .button-group {
+                margin: 1px;
+                /* تقليل التباعد بين الأزرار */
+                justify-content: center;
+            }
+
+            .button-group label {
+                padding: 8px 15px;
+                /* تقليل حجم الأزرار */
+                font-size: 14px;
+                /* تقليل حجم الخط */
+            }
+
+            .cardWork__title {
+                font-size: 15px !important;
+            }
+
+            .cardWork__description {
+                font-size: 7px !important;
+            }
+        }
 
         /* المسافة بين الزر والقائمة */
         @media (max-width: 1024px) {
@@ -708,7 +970,31 @@
             /* تغيير لون النص عند التمرير */
         }
 
+        @media (max-width: 768px) {
+            .cardSkill-image {
+                width: 150px;
+            /* العرض مربع صغير */
+            height: 150px;
+        }
+    }
 
+    
+    @media (max-width: 425px) {
+            .cardSkill-image {
+                width: 140px;
+            /* العرض مربع صغير */
+            height: 140px;
+        }
+    }
+
+    @media (max-width: 375px) {
+            .cardSkill-image {
+                width: 130px;
+            /* العرض مربع صغير */
+            height: 130px;
+        }
+    }
+    
         /* Flex container for the cards */
         .card-container {
             display: flex;
@@ -763,6 +1049,46 @@
                 flex: 1 1 100%;
                 /* One card per row */
                 font-size: 10px;
+            }
+        }
+        
+        /* For smaller devices */
+        @media (max-width: 425px) {
+            .cardWork {
+                flex: 1 1 calc(50% - 20px);
+                /* Two cards per row */
+            }
+
+            .cardWork__description {
+                font-size: 7px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cardWork {
+                flex: 1 1 100%;
+                /* One card per row */
+                font-size: 7px;
+            }
+        }
+
+        /* For smaller devices */
+        @media (max-width: 375px) {
+            .cardWork {
+                flex: 1 1 calc(50% - 20px);
+                /* Two cards per row */
+            }
+
+            .cardWork__description {
+                font-size: 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cardWork {
+                flex: 1 1 100%;
+                /* One card per row */
+                font-size: 6px;
             }
         }
 
@@ -971,6 +1297,34 @@
                 /* التأكد من جعل النص عادي وليس بولد */
             }
         }
+
+        @media screen and (max-width: 375px) {
+            .service-title {
+                font-size: 18px;
+                /* مثال على تقليل حجم العنوان */
+            }
+
+            .service-description {
+                font-size: 13px !important;
+                /* تقليل حجم الوصف بشكل أكبر */
+                font-weight: normal !important;
+                /* التأكد من جعل النص عادي وليس بولد */
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .service-title {
+                font-size: 16px;
+                /* مثال على تقليل حجم العنوان */
+            }
+
+            .service-description {
+                font-size: 10px !important;
+                /* تقليل حجم الوصف بشكل أكبر */
+                font-weight: normal !important;
+                /* التأكد من جعل النص عادي وليس بولد */
+            }
+        }
     </style>
 
 </head>
@@ -1093,6 +1447,7 @@
                     and enhance the lives of millions worldwide.</p>
             </div>
         </div>
+        
     </div>
 
     <div class="Services" id="Services">
