@@ -46,7 +46,7 @@
             transition: all 0.3s ease;
         }
 
-        
+
 
         header {
             background-color: rgb(244, 240, 255);
@@ -181,22 +181,31 @@
 
         /* Media query for mobile */
         @media (max-width: 768px) {
-    .nav-list {
-        display: none; /* Hide the navigation list */
-        flex-direction: column; /* Stack items vertically */
-        position: absolute; /* Position it absolutely */
-        top: 60px; /* Adjust based on your header height */
-        left: 0;
-        right: 0;
-        background-color: #F0E5FF; /* Background color for visibility */
-        border-radius: 10px; /* Rounded corners */
-        padding: 10px 0; /* Padding for spacing */
-        z-index: 1000; /* Ensure it appears above other content */
-    }
+            .nav-list {
+                display: none;
+                /* Hide the navigation list */
+                flex-direction: column;
+                /* Stack items vertically */
+                position: absolute;
+                /* Position it absolutely */
+                top: 60px;
+                /* Adjust based on your header height */
+                left: 0;
+                right: 0;
+                background-color: #F0E5FF;
+                /* Background color for visibility */
+                border-radius: 10px;
+                /* Rounded corners */
+                padding: 10px 0;
+                /* Padding for spacing */
+                z-index: 1000;
+                /* Ensure it appears above other content */
+            }
 
-    .nav-list.active {
-        display: flex; /* Show the navigation list when active */
-    }
+            .nav-list.active {
+                display: flex;
+                /* Show the navigation list when active */
+            }
 
 
             .nav-list li {
@@ -211,7 +220,7 @@
                 margin-left: auto;
             }
         }
-        
+
         @media (max-width: 425px) {
             .nav-list {
                 display: none;
@@ -246,9 +255,9 @@
                 cursor: pointer;
                 margin-left: auto;
             }
-            }
+        }
 
-            @media (max-width: 375px) {
+        @media (max-width: 375px) {
             .nav-list {
                 display: none;
                 position: absolute;
@@ -282,8 +291,8 @@
                 cursor: pointer;
                 margin-left: auto;
             }
-            }
-            
+        }
+
         /* المسافة بين الزر والقائمة */
         @media (max-width: 768px) {
             nav {
@@ -305,7 +314,7 @@
                 /* دفعه إلى أقصى اليمين */
             }
         }
-        
+
         /* المسافة بين الزر والقائمة */
         @media (max-width: 425px) {
             nav {
@@ -327,7 +336,7 @@
                 /* دفعه إلى أقصى اليمين */
             }
         }
-        
+
         /* المسافة بين الزر والقائمة */
         @media (max-width: 375px) {
             nav {
@@ -504,7 +513,7 @@
         /* الهواتف الصغيرة جدًا */
         @media screen and (max-width: 320px) {
             button {
-                padding: 4px 8px !important;
+                padding: 5px 10px !important;
                 font-size: 4px !important;
             }
         }
@@ -512,7 +521,7 @@
         /* الهواتف الذكية القياسية */
         @media screen and (max-width: 375px) {
             button {
-                padding: 5px 10px !important;
+                padding: 6px 12px !important;
                 font-size: 5px !important;
             }
         }
@@ -520,7 +529,7 @@
         /* الهواتف الكبيرة */
         @media screen and (max-width: 425px) {
             button {
-                padding: 6px 12px !important;
+                padding: 8px 15px !important;
                 font-size: 6px !important;
             }
         }
@@ -528,7 +537,7 @@
         /* الأجهزة اللوحية */
         @media screen and (max-width: 768px) {
             button {
-                padding: 10px 20px !important;
+                padding: 11px 22px !important;
                 font-size: 10px !important;
             }
         }
@@ -542,7 +551,7 @@
             font-weight: bold;
             position: relative;
             overflow: hidden;
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         .words {
@@ -558,7 +567,7 @@
             display: inline-block;
             width: fit-content;
             /* تحديد العرض بناءً على المحتوى */
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         .text {
@@ -591,7 +600,7 @@
             .cont p {
                 font-size: 16px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
-                margin-top: 10px;
+                margin-top: 8px;
             }
 
         }
@@ -963,7 +972,7 @@
             /* تغيير لون النص عند التمرير */
         }
 
-    
+
         /* Flex container for the cards */
         .card-container {
             display: flex;
@@ -1020,7 +1029,7 @@
                 font-size: 10px;
             }
         }
-        
+
         /* For smaller devices */
         @media (max-width: 425px) {
             .cardWork {
@@ -1106,7 +1115,7 @@
             font-size: 14px;
             color: #ffffff;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .cardWork__button {
@@ -1260,7 +1269,7 @@
             }
 
             .service-description {
-                font-size: 16px !important;
+                font-size: 19px !important;
                 /* تقليل حجم الوصف بشكل أكبر */
                 font-weight: normal !important;
                 /* التأكد من جعل النص عادي وليس بولد */
@@ -1274,7 +1283,7 @@
             }
 
             .service-description {
-                font-size: 13px !important;
+                font-size: 15px !important;
                 /* تقليل حجم الوصف بشكل أكبر */
                 font-weight: normal !important;
                 /* التأكد من جعل النص عادي وليس بولد */
@@ -1288,7 +1297,7 @@
             }
 
             .service-description {
-                font-size: 10px !important;
+                font-size: 14px !important;
                 /* تقليل حجم الوصف بشكل أكبر */
                 font-weight: normal !important;
                 /* التأكد من جعل النص عادي وليس بولد */
@@ -1416,7 +1425,7 @@
                     and enhance the lives of millions worldwide.</p>
             </div>
         </div>
-        
+
     </div>
 
     <div class="Services" id="Services">
