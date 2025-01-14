@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/Logo.png" type="image/x-icon">
-    <title> Welcome to My site</title>
+    <title> Mariyyah Aziz</title>
 
     <style>
         body {
@@ -21,11 +21,13 @@
 
         .cont {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: flex-start;
-            align-items: flex-start;
-            margin-left: 60px;
-            margin-left: 5% auto;
+            align-items: center;
+            margin-left: 80px;
+            margin-left: 10% auto;
+            margin-right: 80px;
+            margin-right: 10% auto;
             /* استخدام النسبة المئوية بدلاً من px */
             padding: 20px;
             /* إضافة padding لتحسين المظهر */
@@ -46,6 +48,25 @@
             transition: all 0.3s ease;
         }
 
+        .image-right {
+            width: 45%; /* تحديد عرض الصورة */
+            height: auto; /* الحفاظ على نسبة الأبعاد */
+            margin-left: auto; /* تحريك الصورة إلى الجهة اليمنى */
+        }
+
+        @media (max-width: 768px) {
+        .cont {
+            flex-direction: column; /* جعل العناصر تتكدس عموديًا في الشاشات الصغيرة */
+            align-items: center; /* محاذاة العناصر في المنتصف */
+        }
+
+        .image-right {
+            width: 100%; /* عرض الصورة أكبر على الأجهزة الصغيرة */
+            margin-left: 0; /* إزالة الهامش الأيسر */
+            margin-top: 20px; /* إضافة هامش بين النص والصورة */
+        }
+    }
+
         header {
             background-color: rgb(244, 240, 255);
             color: white;
@@ -64,7 +85,6 @@
             /* جعل الشريط فوق العناصر الأخرى */
             margin-top: 8px;
             box-shadow: 0 4px 10px #9C8CB9;
-
         }
 
         @media (max-width: 768px) {
@@ -86,7 +106,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
-            font-size: 25px;
+            font-size: 18px;
             position: relative;
             /* لتسهيل ضبط وضع الزر */
         }
@@ -511,7 +531,7 @@
         /* الهواتف الصغيرة جدًا */
         @media screen and (max-width: 320px) {
             button {
-                padding: 5px 15px !important;
+                padding: 5px 17px !important;
                 font-size: 4px !important;
                 border-radius: 5px;
             }
@@ -520,7 +540,7 @@
         /* الهواتف الذكية القياسية */
         @media screen and (max-width: 375px) {
             button {
-                padding: 6px 18px !important;
+                padding: 6px 20px !important;
                 font-size: 5px !important;
                 border-radius: 10px;
             }
@@ -529,7 +549,7 @@
         /* الهواتف الكبيرة */
         @media screen and (max-width: 425px) {
             button {
-                padding: 8px 19px !important;
+                padding: 8px 22px !important;
                 font-size: 6px !important;
                 border-radius: 15px;
             }
@@ -538,8 +558,8 @@
         /* الأجهزة اللوحية */
         @media screen and (max-width: 768px) {
             button {
-                padding: 11px 27px !important;
-                font-size: 10px !important;
+                padding: 11px 30px !important;
+                font-size: 7px !important;
                 border-radius: 20px;
             }
         }
@@ -557,7 +577,7 @@
         }
 
         .words {
-            font-size: 70px;
+            font-size: 50px;
             font-weight: bold;
             color: transparent;
             background-image: linear-gradient(90deg, var(--col1) 0%, var(--col2) 100%);
@@ -582,7 +602,6 @@
             /* ضمان وجود مسافة كافية أسفل النص المتغير */
         }
 
-
         /* استعلام الوسائط للجوال */
         @media (max-width: 768px) {
             .loader {
@@ -604,7 +623,6 @@
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
                 margin-top: 8px;
             }
-
         }
 
         @media (max-width: 425px) {
@@ -615,7 +633,7 @@
             }
 
             .words {
-                font-size: 35px;
+                font-size: 25px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
                 align-items: center;
             }
@@ -640,7 +658,7 @@
             }
 
             .words {
-                font-size: 25px;
+                font-size: 22px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
             }
 
@@ -1305,6 +1323,7 @@
                 /* التأكد من جعل النص عادي وليس بولد */
             }
         }
+
     </style>
 
 </head>
@@ -1403,7 +1422,6 @@
             </div>
         </button>
 
-
         <!-- زر القائمة الخاص بالجوال -->
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -1427,6 +1445,8 @@
                     and enhance <br> the lives of millions worldwide.</p>
             </div>
         </div>
+        
+    <img src="image/Malok.png" class="image-right">
 
     </div>
 
@@ -1452,7 +1472,6 @@
         </div>
 
     </div>
-
 
     <div class="Works" id="Works">
         <h1>My Recent Works</h1>
@@ -1642,6 +1661,29 @@
                 <img src="work/l.png" alt="Project Image" class="card__image" />
             </div>
 
+            <div class="cardWork">
+                <img src="work/game.png" alt="Project Image" class="card__image" />
+            </div>
+
+            <div class="cardWork">
+                <img src="work/muc.png" alt="Project Image" class="card__image" />
+            </div>
+
+            <div class="cardWork">
+                <img src="work/Mockup.png" alt="Project Image" class="card__image" />
+            </div>
+
+            <div class="cardWork">
+                <img src="work/a3.png" alt="Project Image" class="card__image" />
+            </div>
+            
+            <div class="cardWork">
+                <img src="work/a.png" alt="Project Image" class="card__image" />
+            </div>
+
+            <div class="cardWork">
+                <img src="work/aw.png" alt="Project Image" class="card__image" />
+            </div>
     </section>
 
     </div>
@@ -1702,7 +1744,7 @@
             </a>
 
         </div>
-        <p>© 2024 All Rights Reserved</p>
+        <p>© 2024 - 2025 All Rights Reserved</p>
     </footer>
 
 
