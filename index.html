@@ -49,23 +49,31 @@
         }
 
         .image-right {
-            width: 45%; /* تحديد عرض الصورة */
-            height: auto; /* الحفاظ على نسبة الأبعاد */
-            margin-left: auto; /* تحريك الصورة إلى الجهة اليمنى */
+            width: 45%;
+            /* تحديد عرض الصورة */
+            height: auto;
+            /* الحفاظ على نسبة الأبعاد */
+            margin-left: auto;
+            /* تحريك الصورة إلى الجهة اليمنى */
         }
 
         @media (max-width: 768px) {
-        .cont {
-            flex-direction: column; /* جعل العناصر تتكدس عموديًا في الشاشات الصغيرة */
-            align-items: center; /* محاذاة العناصر في المنتصف */
-        }
+            .cont {
+                flex-direction: column;
+                /* جعل العناصر تتكدس عموديًا في الشاشات الصغيرة */
+                align-items: center;
+                /* محاذاة العناصر في المنتصف */
+            }
 
-        .image-right {
-            width: 100%; /* عرض الصورة أكبر على الأجهزة الصغيرة */
-            margin-left: 0; /* إزالة الهامش الأيسر */
-            margin-top: 20px; /* إضافة هامش بين النص والصورة */
+            .image-right {
+                width: 100%;
+                /* عرض الصورة أكبر على الأجهزة الصغيرة */
+                margin-left: 0;
+                /* إزالة الهامش الأيسر */
+                margin-top: 20px;
+                /* إضافة هامش بين النص والصورة */
+            }
         }
-    }
 
         header {
             background-color: rgb(244, 240, 255);
@@ -531,7 +539,7 @@
         /* الهواتف الصغيرة جدًا */
         @media screen and (max-width: 320px) {
             button {
-                padding: 5px 17px !important;
+                padding: 5px 20px !important;
                 font-size: 4px !important;
                 border-radius: 5px;
             }
@@ -540,7 +548,7 @@
         /* الهواتف الذكية القياسية */
         @media screen and (max-width: 375px) {
             button {
-                padding: 6px 20px !important;
+                padding: 6px 25px !important;
                 font-size: 5px !important;
                 border-radius: 10px;
             }
@@ -549,7 +557,7 @@
         /* الهواتف الكبيرة */
         @media screen and (max-width: 425px) {
             button {
-                padding: 8px 22px !important;
+                padding: 8px 28px !important;
                 font-size: 6px !important;
                 border-radius: 15px;
             }
@@ -558,7 +566,7 @@
         /* الأجهزة اللوحية */
         @media screen and (max-width: 768px) {
             button {
-                padding: 11px 30px !important;
+                padding: 11px 35px !important;
                 font-size: 7px !important;
                 border-radius: 20px;
             }
@@ -577,7 +585,7 @@
         }
 
         .words {
-            font-size: 50px;
+            font-size: 55px;
             font-weight: bold;
             color: transparent;
             background-image: linear-gradient(90deg, var(--col1) 0%, var(--col2) 100%);
@@ -610,12 +618,12 @@
             }
 
             .words {
-                font-size: 30px;
+                font-size: 28px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
             }
 
             h2 {
-                font-size: 30px !important;
+                font-size: 24px !important;
             }
 
             .cont p {
@@ -639,12 +647,12 @@
             }
 
             h2 {
-                font-size: 25px !important;
+                font-size: 22px !important;
                 align-items: center;
             }
 
             .cont p {
-                font-size: 14px;
+                font-size: 12px;
                 /* تقليل حجم الخط للنص داخل العنصر <p> */
                 margin-top: 40px;
                 align-items: center;
@@ -895,7 +903,21 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 35px;
+                font-size: 28px;
+                /* تقليل حجم الخط الخاص بالنص المتغير */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 25px;
+                /* تقليل حجم الخط الخاص بالنص المتغير */
+            }
+        }
+
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 23px;
                 /* تقليل حجم الخط الخاص بالنص المتغير */
             }
         }
@@ -1323,7 +1345,6 @@
                 /* التأكد من جعل النص عادي وليس بولد */
             }
         }
-
     </style>
 
 </head>
@@ -1445,8 +1466,8 @@
                     and enhance <br> the lives of millions worldwide.</p>
             </div>
         </div>
-        
-    <img src="image/Malok.png" class="image-right">
+
+        <img src="image/Malok.png" class="image-right">
 
     </div>
 
@@ -1666,7 +1687,7 @@
             </div>
 
             <div class="cardWork">
-                <img src="work/muc.png" alt="Project Image" class="card__image" />
+                <img src="work/Muc.png" alt="Project Image" class="card__image" />
             </div>
 
             <div class="cardWork">
@@ -1676,7 +1697,7 @@
             <div class="cardWork">
                 <img src="work/a3.png" alt="Project Image" class="card__image" />
             </div>
-            
+
             <div class="cardWork">
                 <img src="work/a.png" alt="Project Image" class="card__image" />
             </div>
